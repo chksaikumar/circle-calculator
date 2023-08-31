@@ -4,7 +4,7 @@ using namespace std;
 void display_title();
 double calculate_dia(double radius);
 double cal_cir(double diameter);
-double cal_Area(double area, double radius);
+double cal_Area(double radius);
 /* {
 	double mpg = miles / gallons;
 	return mpg;
@@ -26,6 +26,7 @@ int main()
 	double circum = cal_cir(dia);
 	cout << "Circumference : " << circum << endl;
 	double ar = cal_Area(radius);
+	cout << "Area: "<<ar <<endl;
 }
 
 void display_title()
@@ -51,5 +52,5 @@ double cal_cir(double dia)
 double cal_Area( double radius )
 {
 	double ar = 3.14159 * radius * radius;
-	return ar
+	return ar;
 }
